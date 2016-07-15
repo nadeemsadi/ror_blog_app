@@ -1,7 +1,12 @@
 <% @posts.each do |post| %>
-	<h2><%= post.title %></h2>
+	<h2 style="background-color:#808080;color:white">
+Background-color set by using #808080
+
+<%= post.title %></h2>
 	<div><%= truncate(post.body, :length => 250) %></div>
 	<br>
 	<%= link_to "Read Post", post %>
+
+
 
 <% end %>
